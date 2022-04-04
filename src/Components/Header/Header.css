@@ -1,0 +1,6 @@
+.navstyle:hover{
+    color: rgb(255, 193, 7)!important;
+}
+.border-style{
+    border-bottom: 2px dotted rgb(255, 193, 7);
+}
