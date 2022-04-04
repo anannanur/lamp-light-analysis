@@ -1,0 +1,15 @@
+.home-container{
+    height: 87.8vh;
+    overflow-x: hidden;
+}
+.img-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.img-container img{
+    box-shadow: 2px 4px 8px 0 rgba(255, 193, 7,.5), 0 6px 20px 0 rgba(255, 193, 7, 0.2);
+}
+.heading-style{
+    border-bottom: 2px dotted rgb(255, 193, 7);
+}
