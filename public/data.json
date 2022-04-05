@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Albert Rosen",
+        "ratings": 4.3,
+        "img": "https://i.ibb.co/YWDLpB6/user1.jpg",
+        "comment": "Product was really good!! I thought it will be good, but its more than thinking"
+    },
+    {
+        "id": 2,
+        "name": "Laura Rosa",
+        "ratings": 4.5,
+        "img": "https://i.ibb.co/YTRLwdP/user2.jpg",
+        "comment": "Great lamp light!! I took it to surprise my little sister. She was so happy to see it"
+    },
+    {
+        "id": 3,
+        "name": "Stephen David",
+        "ratings": 4.2,
+        "img": "https://i.ibb.co/L8rLnWg/user3.jpg",
+        "comment": "Awesome!! In a cheap rate, great products are provided!! I was really happy after seeing the lamps light surrounding myself!!"
+    },
+    {
+        "id": 4,
+        "name": "Neli Della",
+        "ratings": 4,
+        "img": "https://i.ibb.co/YjSRXNK/user4.jpg",
+        "comment": "Esthetic lamp , so nice its lighing!!This service is beyond my expectation.. highly recommended to buy lamp from here"
+    },
+    {
+        "id": 5,
+        "name": "Alstair Cook",
+        "ratings": 5,
+        "img": "https://i.ibb.co/7zXLzCC/user5.jpg",
+        "comment": "Great looking lamp!! Long lasting performance. Really amused after seeing its lightening power!! highly recommending"
+    },
+    {
+        "id": 6,
+        "name": "Zara Leona",
+        "ratings": 4.3,
+        "img": "https://i.ibb.co/PTGyHw3/user6.jpg",
+        "comment":"Nicely decorated, modern in designing. My bedroom looks like heaven at night!! Thanks a lot for providing this beautiful lamp "
+    }
+]
