@@ -13,7 +13,7 @@ const Header = () => {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto text-center">
                         <CustomLink to={"/"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Home</CustomLink>
-                        <CustomLink to={"/about"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Dashboard</CustomLink>
+                        <CustomLink to={"/dashboard"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Dashboard</CustomLink>
                         <CustomLink to={"/reviews"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Reviews</CustomLink>
                         <CustomLink to={"/blogs"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Blogs</CustomLink>
                     </Nav>
