@@ -42,14 +42,14 @@ const About = () => {
     ];
     return (
         <div className="bg-dark">
-            <div className="container">
+            <div className="container pb-5">
                 <div className='row py-5'>
                     <div className="col-md-6">
                         <div className='text-center my-4'>
                             <h4 className='text-warning'>Month wise Sell</h4>
                         </div>
                         <div className='d-flex justify-content-center'>
-                            <LineChart width={400} height={250} data={data}
+                            <LineChart width={350} height={250} data={data}
                                 margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
                                 <XAxis dataKey="month" stroke="#fff" />
                                 <YAxis stroke="#fff" />
@@ -64,7 +64,7 @@ const About = () => {
                             <h4 className='text-warning'>Investment vs Revenue</h4>
                         </div>
                         <div className='d-flex justify-content-center mt-4'>
-                            <AreaChart width={400} height={250} data={data}
+                            <AreaChart width={350} height={250} data={data}
                                 margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
                                 <defs>
                                     <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
@@ -91,7 +91,7 @@ const About = () => {
                             <h4 className='text-warning'>Investment vs Revenue</h4>
                         </div>
                         <div className='d-flex justify-content-center mt-4'>
-                            <BarChart width={400} height={250} data={data}>
+                            <BarChart width={350} height={250} data={data}>
                                 <CartesianGrid strokeDasharray="1 1" />
                                 <XAxis dataKey="month" stroke="#fff" />
                                 <YAxis stroke="#fff" />
@@ -107,10 +107,10 @@ const About = () => {
                             <h4 className='text-warning'>Investment vs Revenue</h4>
                         </div>
                         <div className='d-flex justify-content-center mt-4'>
-                            <PieChart width={400} height={250}>
+                            <PieChart width={350} height={250}>
                                 <Pie data={data} dataKey="investment" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
                                 <Pie data={data} dataKey="revenue" nameKey="month" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
-                            <Tooltip/>
+                                <Tooltip />
                             </PieChart>
                         </div>
                     </div>

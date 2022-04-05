@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import CustomLink from '../Customlink/Customlink';
+import { Link } from 'react-router-dom';
 
 import './Header.css';
 
@@ -12,10 +12,10 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto text-center">
-                        <CustomLink to={"/"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Home</CustomLink>
-                        <CustomLink to={"/dashboard"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Dashboard</CustomLink>
-                        <CustomLink to={"/reviews"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Reviews</CustomLink>
-                        <CustomLink to={"/blogs"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Blogs</CustomLink>
+                        <Link to={"/"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Home</Link>
+                        <Link to={"/dashboard"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Dashboard</Link>
+                        <Link to={"/reviews"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Reviews</Link>
+                        <Link to={"/blogs"} className="navstyle text-white ms-4 fs-5 text-decoration-none">Blogs</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

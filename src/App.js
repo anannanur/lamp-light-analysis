@@ -10,17 +10,17 @@ import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    <div>    
-        <Header></Header>
-        <Routes>
-          <Route path='/' element={<Home />}></Route>
-          <Route path='/dashboard' element={<Dashboard />}></Route>
-          <Route path='/reviews' element={<Reviews />}></Route>
-          <Route path='/blogs' element={<Blogs />}></Route>
-          <Route path='*' element={<Notfound />}></Route>
-        </Routes>
-        <Footer></Footer>
-   </div>
+    <div>
+      <Header></Header>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/dashboard' element={<Dashboard />}></Route>
+        <Route path='/reviews' element={<Reviews />}></Route>
+        <Route path='/blogs' element={<Blogs />}></Route>
+        <Route path='*' element={<Notfound />}></Route>
+      </Routes>
+      <Footer></Footer>
+    </div>
 
   );
 }

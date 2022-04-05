@@ -1,16 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
+import { useProducts } from '../../Hooks/useProduct';
 import img from '../../images/home.jpg';
 import './Home.css';
 
 const Home = () => {
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setProducts(data));
-    }, []);
-    console.log(products);
+
+    const [products] = useProducts();
+    const navigate = useNavigate();
+
+    const seeMoreReviews = () => {
+        const path = '/reviews';
+        navigate(path);
+    }
     return (
         <div className='bg-dark py-5'>
             <div className="container">
@@ -47,7 +50,7 @@ const Home = () => {
                         }
                     </div>
                     <div className='text-center mt-5'>
-                        <Button variant='warning' className='fw-bold'>See All Reviews</Button>
+                        <Button variant='warning' onClick={seeMoreReviews} className='fw-bold'>See More Reviews</Button>
                     </div>
                 </div>
             </div>

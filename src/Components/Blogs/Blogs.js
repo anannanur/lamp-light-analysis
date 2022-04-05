@@ -2,16 +2,16 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='bg-dark py-4'>
-            <div className='container'>
+        <div className='bg-dark py-5'>
+            <div className='container pb-5'>
                 <div className="row mt-5 d-flex justify-content-center">
                     <div className="col-md-10">
-                        <h1 className='text-warning'>1. Context API কি ? এটি কি কাজে লাগে ?</h1>
+                        <h4 className='text-warning'>1. Context API কি ? এটি কি কাজে লাগে ?</h4>
                         <p className='text-white'>Ans: কোনো প্রকার Props Drilling না করেই নিচের দিকের কোনো চাইল্ড তার উপরের দিকের কম্পোনেন্টের ডাটার এক্সেস পাওয়ার যে উপায় সেটিই হলো Context API. ধরা যাক, Reactjs এর এমন একটি কম্পোনেন্টে ডাটা পাঠাতে হবে যেটি কিনা n তম কম্পোনেন্ট । এই অবস্থায় আমরা props drilling না করেই Context API এর মাধ্যমে খুব সহজেই সেই n তম কম্পোনেন্টে ডাটা পাঠাতে পারি ।
                             এখানে মূলত একটি Context তৈরি করা হয় এবং এটি একটি ফাইল থেকে এক্সপোর্ট করে দিতে হয় । এই Context টি ২টা কম্পোনেন্ট প্রভাইড করে থাকে যেগুলো হলো Provider এবং Consumer. আর এরপর প্যারেন্ট কম্পোনেন্টকে Provider কম্পোনেন্টের মাধ্যমে র‍্যাপিং করে দিতে হবে । ব্যাস আমাদের কাজ শেষ । এবার শুধু আমরা Provider কে একটা ভেল্যু সেট করে দিবো, সেটা হতে পারে স্ট্যাটিক বা ডাইনামিক । শেষে যে চাইল্ড Context টাকে রিসিভ করতে তাকে Consumer কম্পোনেন্ট দিয়ে র‍্যাপিং করে দিবো এবং একটি এনোনিমাইস ফাংশনের মাধ্যমে ডাটাকে রিসিভ করবে ।</p>
                     </div>
                     <div className="col-md-10">
-                        <h1 className='text-warning'>2. Inline, Block এবং Inline Block এর মধ্যে পার্থক্য কি ?</h1>
+                        <h4 className='text-warning'>2. Inline, Block এবং Inline Block এর মধ্যে পার্থক্য কি ?</h4>
                         <p className='text-white'>Ans: Inline, Block এবং Inline Block এর মধ্যে পার্থক্যঃ
                             Inline: ইনলাইন ইলিমেন্ট গুলো একটার পর একটা বসতে থাকে অর্থাৎ একটা লাইন ধরে । এরা সবসময় পাশাপাশি বসে, যতটা জায়গা প্রয়োজন হয় ততটাই দখল করে । কিছু ইনলাইন ইলিমেন্ট হলোঃ b, big, i, small, img ইত্যাদি ।
                             Block: ব্লক ইলিমেন্ট গুলো মূলত ইলিমেন্ট এর সমস্ত জায়গা জুড়ে থাকে । এই ইলিমেন্ট গুলো শুরু হয় সব সময় নতুন লাইন থেকে । সাধারণত ব্লক ইলিমেন্ট এর ভেতর ইনলাইন বা ব্লক ইলিমেন্ট ২টাই থাকতে পারে । কিছু ব্লক ইলিমেন্ট হলোঃ p , h1, h2, h3, h4, h5 , h6 , ul , ol , dl , hr , blockquo ইত্যাদি ।
