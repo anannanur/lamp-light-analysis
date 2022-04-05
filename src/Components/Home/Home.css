@@ -1,7 +1,3 @@
-.home-container{
-    height: 87.8vh;
-    overflow-x: hidden;
-}
 .img-container{
    display: flex;
    justify-content: center;
